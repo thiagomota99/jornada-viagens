@@ -5,15 +5,19 @@ Cores de textos */
 
 /* Pseudo-classe que configura propriedades personalizadas */
 :root {
+    --primary-color: #8F0101;
+    --secondary-color: #B81515;
+
     --background-primary-color: #FFFFFF;
     --background-secondary-color: #F5F5F5;
     --background-tertiary-color: #000000;
 
-    --button-primary-color: #8F0101;
-    --button-secondary-color: #B81515;
-
     --text-primary-color: #222222;
     --text-secondary-color: #FFFFFF;
+
+    --titles-weight: 700;
+    --text-weight: 400;
+    --menu-text-weight: 500;
 }
 
 /* CSS RESET */
@@ -21,4 +25,10 @@ body, img, h1, p, fieldset, legend, label, input, select textarea, button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: var(--titles-weight);
+    color: var(--primary-color);
 }
