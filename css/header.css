@@ -4,6 +4,7 @@ header {
   justify-content: space-between;
   align-items: flex-start;
   padding: 38px 48px;
+  position: relative;
   background-color: var(--background-tertiary-color);
 }
 
@@ -17,11 +18,31 @@ header div {
   margin-top: 24px;
 }
 
-
+/*Aplica estilo no irmão do input*/
 input[type="checkbox"]:checked ~ nav {
   display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-tertiary-color);
 }
 
 nav {
   display: none;
+  width: 100%;
+}
+
+.list-links {
+  list-style: none;
+  font-family: "Mo";
+}
+
+.list-links li {
+  margin: 16px 0;
+}
+
+.list-links li a {
+  color: var(--text-secondary-color);
+  text-decoration: none;
 }
